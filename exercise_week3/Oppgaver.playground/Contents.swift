@@ -82,7 +82,7 @@ class MadScientist: Scientist {
     
   }
 let madScientist = MadScientist(madnessFactor: 41, iq: 32, name: "John Doe")
-let madScientist2 = MadScientist(iq: 32)
+
 
 
 /*:
@@ -127,6 +127,44 @@ Timer.init(hour: 5, minute: 5, second: 5)
  7. Identifiser hva slags type det er og skriv det ut ved hjelp av println
  */
 
+class Animal{
+    var place: String
+    var firstDiscovered: Int
+    var food: String = "food"
+    
+    final var placeLastSeen: String{
+        return place
+    }
+    required init(lastSeenPlace: String, firstDisc: Int){
+        self.place = lastSeenPlace
+        self.firstDiscovered = firstDisc
+    
+    }
+    
+    func foodEaten(food: String){
+        print("Eats \(food)")
+    }
+    
+}
+
+class Bird: Animal{
+    
+    var canFly: Bool = false
+    var type: String = "none"
+    
+    required init(lastSeenPlace: String, firstDisc: Int) {
+        super.init(lastSeenPlace:lastSeenPlace, firstDisc:firstDisc)
+    }
+    convenience init(fly: Bool, lastSeenPlace: String, firstDisc: Int){
+        self.init(lastSeenPlace:lastSeenPlace, firstDisc:firstDisc)
+        self.canFly = fly
+      
+        
+            }
+    override func foodEaten(food: String) {
+        print("Sometimes it eats \(food)")
+    }
+}
 
 /*:
  ## Oppgave 5

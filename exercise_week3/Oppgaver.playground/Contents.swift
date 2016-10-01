@@ -15,7 +15,7 @@ Den skal oppfylle dette:
 "LOL😸👻🙆🏽"[5]
 
 */
-
+/*
 extension String {
     
     subscript(index: Int) -> Character? {
@@ -30,7 +30,7 @@ extension String {
     "Hei"[0]     // H
     "Hei"[1]     // e
     "Hei"[4]     // nil
-
+*/
 /*
 ## Oppgave 2
 lag en klasse MadScientist som er subklasse av Scientist som er subklasse av Person som er subklasse av LivingBeing
@@ -181,17 +181,42 @@ class Bird: Animal{
 protocol LivingThing {
     var birthDate: Date {get set}
     var deathDate: Date {get set}
-    var isAlive: Bool {get}
+    var isAlive: Bool {get set}
     
 }
 
 extension LivingThing {
-    var isAlive: Bool {return true }
+    var isAlive: Bool {return true}
 
    }
 
+class Frog: LivingThing {
 
-//class Frog: LivingThing {
+    var deathDate: Date
+    var birthDate: Date
+    var isAlive: Bool = true
+    
+    
+    init(birthDate: Date) {
+        self.birthDate = birthDate
+        self.deathDate = Date()
+    
+     
+    }
+
+    convenience init() {
+        self.init(birthDate: Date())
+        self.isAlive = false
+          }
+    
+
+}
+
+var frog = Frog(birthDate: Date())
+frog.isAlive
+frog.deathDate = Date()
+//frog.isAlive   displays true, it should display false. Needs a fix
+
     
 
 //}
@@ -206,8 +231,11 @@ extension LivingThing {
  }
  */
 
+
+//Commented out
+/*
 class School{
-    var students: [Student]?
+    var students: [Student]
     
     init(){
         self.students = [Student]()
@@ -230,26 +258,28 @@ class Address{
     func printStreet(){
         print(street)
     }
-    func buildFullStreetName() -> String?{
-        return fullStreetName
+    func buildFullStreetName() -> String?{        return fullStreetName
     }
     
 }
 
 let westerdals = School()
-westerdals.students?.append(Student(adr: Address(street: nil)))
-westerdals.students?.append(Student(adr: Address(street: "street1")))
-westerdals.students?.append(Student(adr: Address(street: "street2")))
-westerdals.students?.append(Student(adr: Address(street: "street3")))
+westerdals.students.append(Student(adr: Address(street: nil)))
+westerdals.students.append(Student(adr: Address(street: "street1")))
+westerdals.students.append(Student(adr: Address(street: "street2")))
 
-if let street = westerdals.students?.first?.address?.street {
+
+if let street = westerdals.students.first?.address?.street {
     print("Studenten bor i \(street).")
 } else {
     print("Kunne ikke hente gatenavn")
 }
-
+//Cant find the address
 
 /*:
+ 
+ 
+ 
  ## Oppgave 7
  1. Lag det som er nødvendig for at denne if statementen fungerer
  ```swift
@@ -262,12 +292,12 @@ if let street = westerdals.students?.first?.address?.street {
  */
 
 let otherAdress = Address(street: "my new address")
-if (westerdals.students?.first?.address = otherAdress) != nil {
+if (westerdals.students.first?.address = otherAdress) != nil {
     print("Du satt en ny addresse")
 } else {
     print("Det var ikke mulig å sette en ny addresse")
 }
-
+*/
 
 /*:
  ## Oppgave 8
@@ -281,22 +311,24 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  ```
  */
 
-/*
+
+class School {
+    var students: [Student]?
+}
+
+class Student {
+    var address: Address?
+}
+
  class Address {
  var street: String?
  func printStreet() {
- print("Hello")
+ print("street")
  }
  func buildFullStreetName() -> String? {
  return street
  }
- }
- class Student {
- var address: Address?
- }
- class School {
- var students: [Student]?
- }
+}
  let westerdals = School()
  let student = Student()
  let address = Address()
@@ -306,6 +338,9 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  student.address = address
  westerdals.students = [Student]()
  westerdals.students?.append(student)
+
+
+
  if let street = westerdals.students?.first?.address?.street {
  print("Studenten bor i \(street).")
  } else {
@@ -331,7 +366,7 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  } else {
  print("Kunne ikke hente fullstendig gatenavn")
  }
- */
+ 
 
 /*:
  ## Oppgave 9
@@ -343,38 +378,35 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  "Abba".contains("Abb") // SKal printe ut true
  ```
  */
-/*
- extension String {
- subscript(index: Int) -> Character? {
- for (charIndex, character) in characters.enumerate() {
- if charIndex == index {
- return character
- }
- }
- return nil
- }
- var length : Int  {
- return self.characters.count
- }
- func reverse() -> String {
- var finalString = ""
- for var i = self.length - 1; i >= 0 ; i-- {
- finalString = "\(finalString)\(self[i]!)"
- }
- return finalString
- }
- func contains(string: String) -> Bool {
- if (self as String).rangeOfString(string).location == NSNotFound {
- return false
- }
- return true
- }
- }
+
+extension String {
+    
+    var length: Int {
+        get {
+            return self.characters.count
+        }
+    
+    }
+    
+    func reverse() -> String{
+        var reversedString: String = ""
+        for x in self.characters{
+            reversedString = "\(x)" + reversedString
+        }
+        return reversedString
+    }
+    
+        
+    func contains(find: String) -> Bool{
+        return self.range(of: find) != nil
+        }
+    }
+    
  "AB".length
  "AB".reverse()
  "Abba".contains("AbA")
  "Abba".contains("Abb")
- */
+
 
 
 /*:
@@ -408,7 +440,7 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  thirdArray.thirdElementInArray()
  */
 /*:
- # Oppgave 12
+ # Oppgave 11
  du har fått følgende state satt (enumen må du definere selv):
  let isOnline = false
  let hasTakenBackup = true
@@ -450,7 +482,7 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  createUser()
  */
 /*:
- # Oppgave 13
+ # Oppgave 12
  Få klassen Car til å implementere hashable
  implementer funksjonalitet slik at hvis man har to car objekter og plusser de sammen så får man et dictionary hvor key er modelName
  car1 + car2    // ["Tesla" : car1 ... ]
@@ -483,7 +515,7 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
 
 
 /*:
- #Oppgave 14
+ #Oppgave 13
  Lag en [AnyObject] med 5 forskjellige objekter, løp gjennom arrayet og bruk switch for å printe de forskjellige objektene hvor du skriver ut klassens navn og hvor mange av dem du har funnet til nå.
  */
 /*
@@ -533,7 +565,7 @@ if (westerdals.students?.first?.address = otherAdress) != nil {
  }
  */
 /*:
- #Oppgave 15
+ #Oppgave 14
  Lag en generisk metode printAllStrings som er generic på CollectionType, som går gjennom og printer alle stringer den finner til console. Den skal ikke printe ut andre objekter eller typer enn strenger
  let intArray = [ 234, 34 ,33]
  let stringArray = [ "hello", "world" ]

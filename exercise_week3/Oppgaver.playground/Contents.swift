@@ -77,11 +77,12 @@ class MadScientist: Scientist {
     }
     
     convenience init(iq: Int) {
-        self.init(iq: iq)
+        self.init(madnessFactor: 0, iq: iq, name: "")
     }
     
   }
 let madScientist = MadScientist(madnessFactor: 41, iq: 32, name: "John Doe")
+let madScientist2 = MadScientist(iq: 32)
 
 
 
@@ -130,7 +131,7 @@ Timer.init(hour: 5, minute: 5, second: 5)
 class Animal{
     var place: String
     var firstDiscovered: Int
-    var food: String = "food"
+     var food: String = ""
     
     final var placeLastSeen: String{
         return place
@@ -150,7 +151,6 @@ class Animal{
 class Bird: Animal{
     
     var canFly: Bool = false
-    var type: String = "none"
     
     required init(lastSeenPlace: String, firstDisc: Int) {
         super.init(lastSeenPlace:lastSeenPlace, firstDisc:firstDisc)
@@ -178,10 +178,25 @@ class Bird: Animal{
  frog.isAlive     // false
  */
 
+protocol LivingThing {
+    var birthDate: Date {get set}
+    var deathDate: Date {get set}
+    var isAlive: Bool {get}
+    
+}
+
+extension LivingThing {
+    var isAlive: Bool {return true }
+
+   }
 
 
-/*:
- ## Oppgave 6
+//class Frog: LivingThing {
+    
+
+//}
+/* Oppgave 6
+ 1. Lag det som er nødvendig for at denne if statementen fungerer
  1. Lag det som er nødvendig for at denne if statementen fungerer
  2. Lag et eksempel på begge utfall av if
  if let street = westerdals.students?.first?.address?.street {
@@ -191,8 +206,47 @@ class Bird: Animal{
  }
  */
 
+class School{
+    var students: [Student]?
+    
+    init(){
+        self.students = [Student]()
+    }
+}
+class Student{
+    var address: Address?
+    init(adr: Address?){
+        self.address = adr
+    }
+}
+class Address{
+    var street: String?
+    var fullStreetName: String?
+    
+    init(street: String?){
+        self.street = street
+        self.fullStreetName = nil
+    }
+    func printStreet(){
+        print(street)
+    }
+    func buildFullStreetName() -> String?{
+        return fullStreetName
+    }
+    
+}
 
+let westerdals = School()
+westerdals.students?.append(Student(adr: Address(street: nil)))
+westerdals.students?.append(Student(adr: Address(street: "street1")))
+westerdals.students?.append(Student(adr: Address(street: "street2")))
+westerdals.students?.append(Student(adr: Address(street: "street3")))
 
+if let street = westerdals.students?.first?.address?.street {
+    print("Studenten bor i \(street).")
+} else {
+    print("Kunne ikke hente gatenavn")
+}
 
 
 /*:
@@ -207,6 +261,12 @@ class Bird: Animal{
  ```
  */
 
+let otherAdress = Address(street: "my new address")
+if (westerdals.students?.first?.address = otherAdress) != nil {
+    print("Du satt en ny addresse")
+} else {
+    print("Det var ikke mulig å sette en ny addresse")
+}
 
 
 /*:

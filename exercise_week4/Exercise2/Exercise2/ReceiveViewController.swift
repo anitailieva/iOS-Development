@@ -14,7 +14,6 @@ class ReceiveViewController: UIViewController {
     @IBOutlet weak var labelText: UILabel!
     var message: String?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
          self.title = "Les melding"
@@ -23,8 +22,21 @@ class ReceiveViewController: UIViewController {
             labelText.text = msgText
         }
         }
+    
+    @IBAction func goTo(_ sender: AnyObject) {
         
-        override func didReceiveMemoryWarning() {
+        let url = URL(string: "http://www.facebook.com")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            //If you want handle the completion block than
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("Open url : \(success)")
+            })
+        }
+
+    }
+
+            override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
         }
     

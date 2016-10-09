@@ -11,17 +11,21 @@ import UIKit
 
 class ReceiveViewController: UIViewController {
     
-    @IBOutlet weak var labelTxt: UILabel!
+    @IBOutlet weak var labelText: UILabel!
+    var message: String?
     
-    var msg: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.title = "Les melding"
+        
+        if let msgText = message {
+            labelText.text = msgText
+        }
+        }
+        
+        override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+        }
     
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        labelTxt.text = msg
-    }
-    
-}
+   }

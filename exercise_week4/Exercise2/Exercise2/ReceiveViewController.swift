@@ -25,11 +25,14 @@ class ReceiveViewController: UIViewController {
     
     @IBAction func goTo(_ sender: AnyObject) {
         
-        let url = URL(string: "http://www.facebook.com")!
-        if UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            //If you want handle the completion block than
-            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+       /* let url = URL(string: "http://www.facebook.com")!*/
+        
+        
+        let url = NSURL(string: message!)
+        
+        if UIApplication.shared.canOpenURL(url as! URL) {
+            UIApplication.shared.open(url as! URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(url as! URL, options: [:], completionHandler: { (success) in
                 print("Open url : \(success)")
             })
         }

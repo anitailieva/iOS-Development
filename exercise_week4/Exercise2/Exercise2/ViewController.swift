@@ -26,10 +26,20 @@ class ViewController: UIViewController {
             if let svc = receiveViewController {
                 svc.message = dataTextField.text
             }
+            
+            if segue.identifier == "destinationSegue" {
+                let receiveViewController = segue.destination as? DestinationViewController
+                if let dv = receiveViewController {
+                    dv.msg = dataTextField.text
+                }
+            }
+            
+
         }
 
     }
     
+
     
     /*
      @IBAction func sendMessage(_ sender: AnyObject) {
@@ -42,5 +52,8 @@ class ViewController: UIViewController {
      
      }
  */
+    
+    
+  
 }
 

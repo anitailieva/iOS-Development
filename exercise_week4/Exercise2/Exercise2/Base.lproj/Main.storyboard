@@ -25,8 +25,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOJ-5p-2nV">
+                                <frame key="frameInset" minX="201" minY="228" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To"/>
+                                <connections>
+                                    <segue destination="JvY-Zm-y9j" kind="show" identifier="destinationSegue" id="kps-hN-yMg"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9Z-GZ-bTh">
-                                <frame key="frameInset" minX="164" minY="215" width="46" height="27"/>
+                                <frame key="frameInset" minX="127" minY="230" width="46" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
@@ -44,6 +52,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="980" y="43.628185907046479"/>
+        </scene>
+        <!--Destination View Controller-->
+        <scene sceneID="pLs-dr-FOQ">
+            <objects>
+                <viewController id="JvY-Zm-y9j" userLabel="Destination View Controller" customClass="DestinationViewController" customModule="Exercise2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Liv-DG-Sap"/>
+                        <viewControllerLayoutGuide type="bottom" id="AgR-NS-W43"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v9c-fz-wC0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pt-gj-vk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="758"/>
         </scene>
         <!--Receive View Controller-->
         <scene sceneID="hgp-W7-AzD">

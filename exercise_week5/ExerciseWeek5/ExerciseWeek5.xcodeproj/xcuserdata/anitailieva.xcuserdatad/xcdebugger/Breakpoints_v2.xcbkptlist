@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Exercise2/ReceiveViewController.swift"
-            timestampString = "498136114.610395"
+            filePath = "ExerciseWeek5/MasterViewController.swift"
+            timestampString = "498139971.139202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "goTo(_:)"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Exercise2/ReceiveViewController.swift"
-            timestampString = "498136121.232458"
+            filePath = "ExerciseWeek5/MasterViewController.swift"
+            timestampString = "498140109.265609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "goTo(_:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "insertNewObject(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -64,12 +64,24 @@
                     <view key="view" contentMode="scaleToFill" id="v9c-fz-wC0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pep-XC-Wj6">
+                                <frame key="frameInset" minX="132" minY="330" width="107" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="titleTxt" destination="Pep-XC-Wj6" id="Ub1-de-RX4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pt-gj-vk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="758"/>
+            <point key="canvasLocation" x="981.60000000000002" y="757.87106446776613"/>
         </scene>
         <!--Receive View Controller-->
         <scene sceneID="hgp-W7-AzD">

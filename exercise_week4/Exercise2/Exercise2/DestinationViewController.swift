@@ -10,7 +10,9 @@ import UIKit
 
 class DestinationViewController: UIViewController {
     
-    var msg: String?
+       
+    @IBOutlet weak var titleTxt: UITextView!
+    var msg = ""
    
 
     override func viewDidLoad() {
@@ -20,12 +22,12 @@ class DestinationViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
-       
-    let alertController = UIAlertController(title: msg, message: "I did it", preferredStyle: .alert)
+     
+        let alertController = UIAlertController(title: "Title", message: "I did it", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(action)
+        
         
         
         self.present(alertController, animated: true, completion: nil)

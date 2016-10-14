@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             if segue.identifier == "destinationSegue" {
                 let receiveViewController = segue.destination as? DestinationViewController
                 if let dv = receiveViewController {
-                    dv.msg = dataTextField.text
+                    dv.msg = dataTextField.text!
                 }
             }
             
@@ -43,12 +43,12 @@ class ViewController: UIViewController {
     
     /*
      @IBAction func sendMessage(_ sender: AnyObject) {
-     if let receivingViewController = storyboard?.instantiateViewController(withIdentifier: "receivingVC")as? ReceiveViewController {
+     if let receivingViewController = storyboard?.instantiateViewController(withIdentifier: "ReceiveViewController")as? ReceiveViewController {
      
      // Setter property på destination vc
-     receivingViewController.msg = messageTextField.text!
+     receivingViewController.message = dataTextField.text!
      // Før den vises
-     present(receivingViewController, animated: false, completion: nil)
+     present(receivingViewController, animated: true, completion: nil)
      
      }
  */

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ExerciseWeek5.xcscheme</key>
+		<key>TableViewExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3C1DA5EC1DB0FDA400782C65</key>
+		<key>3CEDD2171DB10F0E0000CE08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C1DA6021DB0FDA400782C65</key>
+		<key>3CEDD22D1DB10F0E0000CE08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C1DA60D1DB0FDA400782C65</key>
+		<key>3CEDD2381DB10F0E0000CE08</key>
 		<dict>
 			<key>primary</key>
 			<true/>

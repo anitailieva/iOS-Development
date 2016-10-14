@@ -1,6 +1,6 @@
 //
-//  ExerciseWeek5UITests.swift
-//  ExerciseWeek5UITests
+//  TableViewExampleUITests.swift
+//  TableViewExampleUITests
 //
 //  Created by Anita Ilieva on 14/10/2016.
 //  Copyright © 2016 Anita Ilieva. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ExerciseWeek5UITests: XCTestCase {
+class TableViewExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

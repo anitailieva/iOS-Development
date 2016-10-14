@@ -1,6 +1,6 @@
 //
 //  MasterViewController.swift
-//  ExerciseWeek5
+//  TableViewExample
 //
 //  Created by Anita Ilieva on 14/10/2016.
 //  Copyright © 2016 Anita Ilieva. All rights reserved.
@@ -38,7 +38,8 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: Any) {
-        objects.insert("Antall rader: ", at: 0)
+        
+        objects.insert("Antall celler: \(objects.count + 1)", at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
@@ -58,34 +59,34 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Table View
-    
+
     //this method tells the table view how many sections to display
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     
     //this method tells the table view how many rows to display in a given section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
     }
-
+    
     //this method configures and provides a cell to display for a given row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
+        
         let object = objects[indexPath.row] as! NSString
         cell.textLabel!.text = object.description
         return cell
     }
     
-
+    
     //this method asks the data source to verify that the given row is editable.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-
+    
     
     //this method asks the data source to commit the insertion or deletion of a specified row in the receiver.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -96,6 +97,7 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
+    
 
 
 }

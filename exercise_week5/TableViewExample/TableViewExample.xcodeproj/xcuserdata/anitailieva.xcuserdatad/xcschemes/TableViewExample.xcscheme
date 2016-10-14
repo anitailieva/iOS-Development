@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C1DA5EC1DB0FDA400782C65"
-               BuildableName = "ExerciseWeek5.app"
-               BlueprintName = "ExerciseWeek5"
-               ReferencedContainer = "container:ExerciseWeek5.xcodeproj">
+               BlueprintIdentifier = "3CEDD2171DB10F0E0000CE08"
+               BuildableName = "TableViewExample.app"
+               BlueprintName = "TableViewExample"
+               ReferencedContainer = "container:TableViewExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C1DA6021DB0FDA400782C65"
-               BuildableName = "ExerciseWeek5Tests.xctest"
-               BlueprintName = "ExerciseWeek5Tests"
-               ReferencedContainer = "container:ExerciseWeek5.xcodeproj">
+               BlueprintIdentifier = "3CEDD22D1DB10F0E0000CE08"
+               BuildableName = "TableViewExampleTests.xctest"
+               BlueprintName = "TableViewExampleTests"
+               ReferencedContainer = "container:TableViewExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C1DA60D1DB0FDA400782C65"
-               BuildableName = "ExerciseWeek5UITests.xctest"
-               BlueprintName = "ExerciseWeek5UITests"
-               ReferencedContainer = "container:ExerciseWeek5.xcodeproj">
+               BlueprintIdentifier = "3CEDD2381DB10F0E0000CE08"
+               BuildableName = "TableViewExampleUITests.xctest"
+               BlueprintName = "TableViewExampleUITests"
+               ReferencedContainer = "container:TableViewExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C1DA5EC1DB0FDA400782C65"
-            BuildableName = "ExerciseWeek5.app"
-            BlueprintName = "ExerciseWeek5"
-            ReferencedContainer = "container:ExerciseWeek5.xcodeproj">
+            BlueprintIdentifier = "3CEDD2171DB10F0E0000CE08"
+            BuildableName = "TableViewExample.app"
+            BlueprintName = "TableViewExample"
+            ReferencedContainer = "container:TableViewExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C1DA5EC1DB0FDA400782C65"
-            BuildableName = "ExerciseWeek5.app"
-            BlueprintName = "ExerciseWeek5"
-            ReferencedContainer = "container:ExerciseWeek5.xcodeproj">
+            BlueprintIdentifier = "3CEDD2171DB10F0E0000CE08"
+            BuildableName = "TableViewExample.app"
+            BlueprintName = "TableViewExample"
+            ReferencedContainer = "container:TableViewExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3C1DA5EC1DB0FDA400782C65"
-            BuildableName = "ExerciseWeek5.app"
-            BlueprintName = "ExerciseWeek5"
-            ReferencedContainer = "container:ExerciseWeek5.xcodeproj">
+            BlueprintIdentifier = "3CEDD2171DB10F0E0000CE08"
+            BuildableName = "TableViewExample.app"
+            BlueprintName = "TableViewExample"
+            ReferencedContainer = "container:TableViewExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

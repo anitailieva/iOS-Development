@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ExerciseWeek5.xcodeproj">
+      location = "self:TableViewExample.xcodeproj">
    </FileRef>
 </Workspace>

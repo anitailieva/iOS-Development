@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ExerciseWeek5
+//  TableViewExample
 //
 //  Created by Anita Ilieva on 14/10/2016.
 //  Copyright © 2016 Anita Ilieva. All rights reserved.

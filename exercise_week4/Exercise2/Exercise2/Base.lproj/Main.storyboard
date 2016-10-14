@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="981.60000000000002" y="757.87106446776613"/>
         </scene>
-        <!--Receive View Controller-->
+        <!--Receiving View Controller-->
         <scene sceneID="hgp-W7-AzD">
             <objects>
-                <viewController id="tvT-q9-y07" userLabel="Receive View Controller" customClass="ReceiveViewController" customModule="Exercise2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tvT-q9-y07" userLabel="Receiving View Controller" customClass="ReceivingViewController" customModule="Exercise2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6pc-2d-5zD"/>
                         <viewControllerLayoutGuide type="bottom" id="DNy-RJ-rSj"/>

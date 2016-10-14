@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ReceiveViewController: UIViewController {
+class ReceivingViewController: UIViewController {
     
     @IBOutlet weak var labelText: UILabel!
     var message: String?

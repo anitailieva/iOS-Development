@@ -22,14 +22,14 @@ class ViewController: UIViewController {
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "dataSegue" {
-            let receiveViewController = segue.destination as? ReceiveViewController
-            if let svc = receiveViewController {
+            let receivingViewController = segue.destination as? ReceivingViewController
+            if let svc = receivingViewController {
                 svc.message = dataTextField.text
             }
             
             if segue.identifier == "destinationSegue" {
-                let receiveViewController = segue.destination as? DestinationViewController
-                if let dv = receiveViewController {
+                let destinationViewController = segue.destination as? DestinationViewController
+                if let dv = destinationViewController {
                     dv.msg = dataTextField.text!
                 }
             }

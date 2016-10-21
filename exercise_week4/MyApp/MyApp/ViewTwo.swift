@@ -26,6 +26,7 @@ class ViewTwo: UIViewController{
         
         if let message = labelText {
             msgTxt.text = message
+
         }
     }
     

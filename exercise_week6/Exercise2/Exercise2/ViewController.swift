@@ -9,21 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+     var moveUp:Bool = true
+    
     @IBOutlet weak var purpleBox: UIView!
    
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     
 
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBAction func goUp(_ sender: AnyObject) {
-        topConstraint.constant = 50;    //  @IBoutlet weak var heightConstraint : NSLayoutConstraint!
         
-        
-        UIView.animate(withDuration: 2.0) {
-            self.view.layoutIfNeeded()
+        if moveUp {
+                self.moveUp = false
+                self.topConstraint.constant = -74.0
+                self.view.setNeedsUpdateConstraints()
+                UIView.animate(withDuration: 0.3, animations: {() -> Void in
+                    self.view.layoutIfNeeded()
+                    
+                })
+            }
+            else {
+                self.moveUp = true
+                self.topConstraint.constant = 300.0
+                self.view.setNeedsUpdateConstraints()
+                UIView.animate(withDuration: 0.3, animations: {() -> Void in
+                    self.view.layoutIfNeeded()
+                })
+            }
         }
     
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,21 +8,21 @@
 
 import UIKit
 
-class CollectionViewController: UIViewController {
+class CollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var label: UICollectionView!
+
     let reuseIdentifier = "reuseCell"
-    var items = [String]()
+    var items = ["iPhone", "Apple Watch", "Mac"]
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -30,20 +30,16 @@ class CollectionViewController: UIViewController {
         return self.items.count
     }
     
-    // make a cell for each cell index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // get a reference to our storyboard cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
-        
-        // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.myLabel?.text = self.items[indexPath.item]
-        cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseCell", for: indexPath as IndexPath) 
+        cell.backgroundColor = UIColor.blue
+
         
         return cell
     }
     
-    // MARK: - UICollectionViewDelegate protocol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events

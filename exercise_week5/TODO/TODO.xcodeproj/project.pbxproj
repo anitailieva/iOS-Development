@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3C13EC5A1DBBF3EF00EB00FB /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13EC591DBBF3EF00EB00FB /* CollectionViewController.swift */; };
-		3C13EC5C1DBBF84F00EB00FB /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13EC5B1DBBF84F00EB00FB /* MyCollectionViewCell.swift */; };
 		3C2515E71DBAC63000186AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2515E61DBAC63000186AA4 /* AppDelegate.swift */; };
 		3C2515EC1DBAC63000186AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2515EA1DBAC63000186AA4 /* Main.storyboard */; };
 		3C2515EE1DBAC63000186AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C2515ED1DBAC63000186AA4 /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		3C13EC591DBBF3EF00EB00FB /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = SOURCE_ROOT; };
-		3C13EC5B1DBBF84F00EB00FB /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C2515E31DBAC63000186AA4 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2515E61DBAC63000186AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C2515EB1DBAC63000186AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				3C2515E61DBAC63000186AA4 /* AppDelegate.swift */,
 				3C2515EA1DBAC63000186AA4 /* Main.storyboard */,
 				3C13EC591DBBF3EF00EB00FB /* CollectionViewController.swift */,
-				3C13EC5B1DBBF84F00EB00FB /* MyCollectionViewCell.swift */,
 				3C2515ED1DBAC63000186AA4 /* Assets.xcassets */,
 				3C2515EF1DBAC63000186AA4 /* LaunchScreen.storyboard */,
 				3C2515F21DBAC63000186AA4 /* Info.plist */,
@@ -269,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C13EC5A1DBBF3EF00EB00FB /* CollectionViewController.swift in Sources */,
-				3C13EC5C1DBBF84F00EB00FB /* MyCollectionViewCell.swift in Sources */,
 				3C2516171DBACF7E00186AA4 /* DetailViewController.swift in Sources */,
 				3C2516151DBAC92200186AA4 /* ListViewController.swift in Sources */,
 				3C2515E71DBAC63000186AA4 /* AppDelegate.swift in Sources */,

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojq-i4-66t">
+                                <color key="backgroundColor" red="0.59416898399999996" green="0.23536208049999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-Ou-YLq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="fjZ-oq-shQ"/>
+                                </constraints>
+                                <state key="normal" title="Up"/>
+                                <connections>
+                                    <action selector="goUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5v-bC-xOb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ojq-i4-66t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="3J2-6h-3dU"/>
+                            <constraint firstItem="jpQ-Ou-YLq" firstAttribute="top" secondItem="Ojq-i4-66t" secondAttribute="bottom" constant="51" id="76d-Zn-dsC"/>
+                            <constraint firstItem="jpQ-Ou-YLq" firstAttribute="centerX" secondItem="Ojq-i4-66t" secondAttribute="centerX" id="Tbs-Br-IgK"/>
+                            <constraint firstAttribute="bottom" secondItem="Ojq-i4-66t" secondAttribute="bottom" constant="341" id="Y4G-8T-fMC"/>
+                            <constraint firstItem="Ojq-i4-66t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iF1-gk-ahR"/>
+                            <constraint firstItem="Ojq-i4-66t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="175" id="wNC-ww-sMt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="purpleBox" destination="Ojq-i4-66t" id="Ibx-xG-U6U"/>
+                        <outlet property="topConstraint" destination="wNC-ww-sMt" id="qOK-h3-qGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+</document>

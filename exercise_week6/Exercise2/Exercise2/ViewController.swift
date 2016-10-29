@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first! as UITouch
         let point = touch.location(in: purpleBox)

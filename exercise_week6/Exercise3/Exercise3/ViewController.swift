@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Exercise3
 //
-//  Created by Anita Ilieva on 28/10/2016.
+//  Created by Anita Ilieva on 29/10/2016.
 //  Copyright © 2016 Anita Ilieva. All rights reserved.
 //
 
@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    
+    @IBAction override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue is CustomSegue {
+                (segue as! CustomSegue).animationType = .push
+            }
+        }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    @IBAction func click() {
+        performSegue(withIdentifier: "CustomSegue", sender: nil)
+    }
+    
+    @IBAction func unwindFromViewController(_ sender: UIStoryboardSegue) {
+    }
 
 }
 

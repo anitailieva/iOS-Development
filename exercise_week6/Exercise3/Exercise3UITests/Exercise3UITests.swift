@@ -2,7 +2,7 @@
 //  Exercise3UITests.swift
 //  Exercise3UITests
 //
-//  Created by Anita Ilieva on 28/10/2016.
+//  Created by Anita Ilieva on 29/10/2016.
 //  Copyright © 2016 Anita Ilieva. All rights reserved.
 //
 

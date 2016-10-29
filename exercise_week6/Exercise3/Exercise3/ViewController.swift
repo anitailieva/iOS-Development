@@ -10,6 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var Controller: UISegmentedControl!
+    @IBAction func changeLabel(_ sender: Any) {
+        
+        if Controller.selectedSegmentIndex == 0 {
+            Label.text = "First"
+        }
+        
+        if Controller.selectedSegmentIndex == 1 {
+            Label.text = "Second"
+        }
+        
+        if Controller.selectedSegmentIndex == 2 {
+            Label.text = "Third"
+        }
+    }
     
     @IBAction override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue is CustomSegue {

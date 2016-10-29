@@ -35,6 +35,25 @@
                                     <segue destination="AXa-4J-tYp" kind="custom" identifier="CustomSegue" customClass="CustomSegue" customModule="Exercise3" customModuleProvider="target" id="aM4-nn-no0"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LEQ-7W-kNM">
+                                <rect key="frame" x="74" y="63" width="226" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="valueChanged" id="778-6E-fAm"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwF-iU-86c">
+                                <rect key="frame" x="109" y="145" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -42,9 +61,14 @@
                             <constraint firstItem="dVZ-mJ-ull" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQT-Jh-PKY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Controller" destination="LEQ-7W-kNM" id="hns-13-Itx"/>
+                        <outlet property="Label" destination="fwF-iU-86c" id="Up0-XI-2s6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
         <!--Other View Controller-->
         <scene sceneID="7hT-Mk-v5i">

@@ -34,5 +34,10 @@ class PersonProjectTests: XCTestCase {
         XCTAssertEqual(person.name, "Steve Jobs")
     }
     
-    
+    func testAssertWrongValue(){
+        let person = Person(named: "John Doe")
+        person.age = 12
+        XCTAssertEqual(person.age, 29)
+
+    }
 }

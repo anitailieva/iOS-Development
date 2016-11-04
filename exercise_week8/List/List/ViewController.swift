@@ -29,7 +29,6 @@ class TableViewController: UITableViewController {
                 self.tableView.reloadData()
             
             }
-            
             }
         ))
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)

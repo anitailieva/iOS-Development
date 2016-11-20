@@ -17,6 +17,7 @@
 		3CF36EAF1DE1F5F700A3E345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF36EAD1DE1F5F700A3E345 /* LaunchScreen.storyboard */; };
 		3CF36EBA1DE1F5F700A3E345 /* BreakOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF36EB91DE1F5F700A3E345 /* BreakOutTests.swift */; };
 		3CF36EC51DE1F5F700A3E345 /* BreakOutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF36EC41DE1F5F700A3E345 /* BreakOutUITests.swift */; };
+		3CF36ED31DE1FD6200A3E345 /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CF36ED21DE1FD6200A3E345 /* LLPIXEL3.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3CF36EC01DE1F5F700A3E345 /* BreakOutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakOutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF36EC41DE1F5F700A3E345 /* BreakOutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakOutUITests.swift; sourceTree = "<group>"; };
 		3CF36EC61DE1F5F700A3E345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF36ED21DE1FD6200A3E345 /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		3CF36E9D1DE1F5F700A3E345 /* BreakOut */ = {
 			isa = PBXGroup;
 			children = (
+				3CF36ED21DE1FD6200A3E345 /* LLPIXEL3.ttf */,
 				3CF36E9E1DE1F5F700A3E345 /* AppDelegate.swift */,
 				3CF36EA01DE1F5F700A3E345 /* GameScene.sks */,
 				3CF36EA21DE1F5F700A3E345 /* Actions.sks */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF36EAA1DE1F5F700A3E345 /* Main.storyboard in Resources */,
+				3CF36ED31DE1FD6200A3E345 /* LLPIXEL3.ttf in Resources */,
 				3CF36EA11DE1F5F700A3E345 /* GameScene.sks in Resources */,
 				3CF36EAC1DE1F5F700A3E345 /* Assets.xcassets in Resources */,
 				3CF36EAF1DE1F5F700A3E345 /* LaunchScreen.storyboard in Resources */,
